@@ -1,0 +1,8 @@
+
+evalcms_module.blog:
+  path: '/blog'
+  defaults:
+    _controller: '\Drupal\evalcms_module\Controller\BlogController::blog'
+    _title: 'Blog'
+  requirements:
+    _permission: 'access content'

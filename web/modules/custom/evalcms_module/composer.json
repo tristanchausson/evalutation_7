@@ -1,0 +1,14 @@
+{
+  "name": "drupal/evalcms_module",
+  "type": "drupal-module",
+  "description": "Module de Blog",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/evalcms_module",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/evalcms_module",
+    "source": "http://cgit.drupalcode.org/evalcms_module"
+  },
+  "require": { }
+}

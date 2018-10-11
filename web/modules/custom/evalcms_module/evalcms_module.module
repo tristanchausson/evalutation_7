@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains evalcms_module.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function evalcms_module_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the evalcms_module module.
+    case 'help.page.evalcms_module':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module de Blog') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function evalcms_module_theme() {
+  return [
+    'evalcms_module' => [
+      'render element' => 'children',
+      'template' => 'blog.html.twig',
+      'variables' => [
+        'markup' => NULL,
+      ],
+    ],
+  ];
+}
